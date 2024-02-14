@@ -13,7 +13,22 @@ public class Article {
     @GeneratedValue // 1, 2, 3, ... 자동 생성 어노테이션!
     private Long id;
     @Column // DB의 table 과 연결되도록
-    public String title;
+    private String title;
     @Column
-    public String content;
+    private String content;
+
+    public Article(Long id, String title, String content) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
