@@ -2,8 +2,8 @@ package com.example.firstproject.dto;
 
 public class ArticleForm {
 
-    private String title;
-    private String content;
+    private final String title;
+    private final String content;
 
     public ArticleForm(String title, String content) {
         this.title = title;
@@ -12,9 +12,12 @@ public class ArticleForm {
 
     @Override
     public String toString() {
-        return "ArticleForm{" +
+        return "ArticleForms{" +
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 '}';
+    }
+
+    public Article toEntity() {
     }
 }
