@@ -21,7 +21,7 @@ public class ArticleController {
 
 
         // 1, DTO(form)를 Entity로 변환!
-        Article article = form.toEntity();
+        Article article = form.toEntity(); // Article: Entity class, toEntity(): 메서드
 
         // 2. Repository에게 Entiry를 DB 안에 저장하게 함!
 
