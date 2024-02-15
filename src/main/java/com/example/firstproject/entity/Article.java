@@ -4,8 +4,12 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.ToString;
 
 @Entity // DB가 해당 객체를 인식 가능!
+@AllArgsConstructor // 생성자를 직접 작성하는 대신 lombok 을 사용해서 리팩토링
+@ToString // toString()를 직접 작성하는 대신 lombok 을 사용해서 리팩토링
 public class Article {
 
     // DB가 알 수 있는 규격화된 객체 생성
@@ -17,22 +21,7 @@ public class Article {
     @Column
     private String content;
 
-    public Article(Long id, String title, String content) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-    }
-
     public Article() {
 
-    }
-
-    @Override
-    public String toString() {
-        return "Article{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                '}';
     }
 }
