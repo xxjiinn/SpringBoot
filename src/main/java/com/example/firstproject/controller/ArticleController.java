@@ -19,7 +19,7 @@ public class ArticleController {
     @GetMapping("/articles/new")
     public String newArticle() {
 //        System.out.println("/articles/new 로 이동!"); -> 로깅 기능으로 대체!
-        log.info("/articles/new 로 이동!!");
+        log.info("/articles/new 로 이동!");
         return "articles/new";
     }
 
