@@ -16,11 +16,11 @@ public class ArticleController {
     @Autowired // 스프링부트가 미리 생성해놓은 객체를 가져다가 자동 연결!
     private ArticleRepository articleRepository;
 
-    @GetMapping("/articles/new")
+    @GetMapping("/articles/main")
     public String newArticle() {
 //        System.out.println("/articles/new 로 이동!"); -> 로깅 기능으로 대체!
-        log.info("/articles/new 로 이동!!");
-        return "articles/new";
+        log.info("/articles/main 로 이동!!");
+        return "articles/main";
     }
 
     @PostMapping("/articles/create")
