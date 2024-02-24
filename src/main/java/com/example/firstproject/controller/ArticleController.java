@@ -23,11 +23,11 @@ public class ArticleController {
         return "articles/main";
     }
 
-    @PostMapping("/articles/create")
+    @PostMapping("/articles/creates")
     public String createArticle(ArticleForm form) {
 //        System.out.println("/articles/create 로 이동!");
 //        System.out.println(form.toString());
-        log.info("/articles/create 로 이동!!");
+        log.info("/articles/creates 로 이동!!");
         log.info(form.toString());
 
         // 1, DTO(form)를 Entity로 변환!
