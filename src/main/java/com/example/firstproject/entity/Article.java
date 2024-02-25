@@ -17,7 +17,7 @@ public class Article {
     @GeneratedValue // 1, 2, 3, ... 자동 생성 어노테이션!
     private Long id;
     @Column // DB의 table 과 연결되도록
-    private String title;
+    private String titles;
     @Column
     private String content;
 
