@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller // 해당 파일이 Controller라는 어노테이션
-public class FirstController {
+public class FirstControllers {
 
     @GetMapping("/hi") // 주소창에 "/hi" 라는 주소를 입력하면 @GetMapping를 통해 여기로 찾아와서 해당 메서드 (niceToMeetYou())를 호출한다.
     public String niceToMeetYou(Model model) {
